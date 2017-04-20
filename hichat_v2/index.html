@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html class="noscroll" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/default.min.css?v=10">
+    <link rel="stylesheet" type="text/css" href="css/animate_v2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lCalendar.css">
+    <style>
+        .noscroll,
+        .noscroll body{
+            overflow:hidden;
+        }
+        .noscroll body{
+            position:relative;
+        }
+    </style>
+    <title>嗨撩</title>
+</head>
+<body>
+
+<!--loding层-->
+<div class="loding loding-bg fixed">
+    <div class="loding-logo">
+        <img src="images/logo.png" alt="">
+    </div>
+</div>
+
+<!--注册-->
+<div class="avatar-upload dj-bg fixed hide">
+    <div class="in-avatar-upload">
+        <i class="iconfont icon-xiangji"></i><span>上传新头像</span>
+    </div>
+    <input class="register-name" type="text" placeholder="默认微信昵称"/>
+    <a class="next" id="link_qrcode" href="#">下一步</a>
+    <a class="skip" href="#">跳过</a>
+</div>
+
+<!--上传二维码-->
+<div class="qrcode-upload dj-bg fixed hide">
+    <div class="in-qrcode-upload">
+        <i class="iconfont icon-apperweima"></i> <span>上传二维码</span>
+    </div>
+    <input class="register-name" type="text" placeholder="填写微信ID"/>
+    <p>填写微信号或者二维码,别人要看您的二维码需要向您支付100元/次</p>
+    <a class="next" href="#">下一步</a>
+    <a class="skip" href="#">跳过</a>
+</div>
+
+<!--聊天界面-->
+<div class="chat-content chat-bg hide fixed">
+    <div class="setting-rank flex">
+        <p><span class="iconfont icon-shezhi"></span><span>设置</span></p>
+        <ul class="show-rank-bar">
+            <li><img src="images/logo.png" alt=""><span class="iconfont icon-huangguan"></span></li>
+            <li><img src="images/logo.png" alt=""><span class="iconfont icon-huangguan"></span></li>
+            <li><img src="images/logo.png" alt=""><span class="iconfont icon-huangguan"></span></li>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><i class="iconfont icon-xiayigeunext"></i></li>
+        </ul>
+    </div>
+    <span class="iconfont ping-btn icon-jiu"></span>
+    <div class="message-content">
+        <div class="in-message-content">
+            <div class="message-receive repacket-info flex">
+                <div class="user-avatar"></div>
+                <div class="message-text flex">
+                    <i>小怪兽</i>送<i>奥特曼</i>
+                    <div class="rd-bg"></div>
+                </div>
+            </div>
+            <div class="message-receive flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">快说快说快说快说快说快说快说快说</div>
+                <span class="message-time">2017-1-8</span>
+                <ul class="user-opera-list flex hide">
+                    <li><span class="iconfont icon-buchongiconsvg05"></span>礼物</li>
+                    <li><span class="iconfont icon-hongbao"></span>红包</li>
+                    <li><span class="iconfont icon-liaotian"></span>信息</li>
+                    <li><span class="iconfont icon-info"></span>资料</li>
+                    <li><span class="iconfont icon-weixin"></span>微信</li>
+                </ul>
+            </div>
+            <div class="message-receive message-gift flex">
+                <div class="user-avatar"></div>
+                <p class="sender-name flex"><i>拉卡</i>送<i>卡拉</i><span>飞机</span><span class="gift">×10</span></p>
+            </div>
+            <div class="message-receive message-pic flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text"><img src="images/bg.jpg" alt=""><span>为他霸屏</span></div>
+            </div>
+            <div class="message-receive pa-message flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">
+                    <div class="pa-message-top">
+                        <img src="images/white.png" alt=""> <span>为TA霸屏</span>
+                    </div>
+                    <p>Happy Birthday!!!</p>
+                </div>
+                <span>重金霸屏30秒</span>
+            </div>
+            <div class="message-receive horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <p class="message-text">喇叭内容喇叭内容喇叭内容</p>
+            </div>
+            <div class="message-receive red-packet flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">
+                    <!-- <div class="red-packet-top">
+                         <p>恭喜发财，大吉大利</p>
+                         <span>No:888888</span>
+                     </div>
+                     <div class="red-packet-bottom">
+                         立即领取
+                     </div>-->
+                    <a href="#">领取利是</a>
+                    <span class="message-time">2017-1-8</span>
+                </div>
+            </div>
+            <div class="message-send text-content flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">快说快说快说快说快说快说快说快说</div>
+            </div>
+            <div class="message-send red-packet flex">
+                <div class="user-avatar"></div>
+                <div class="message-text"><!--
+                    <div class="red-packet-top">
+                        <p>恭喜发财，大吉大利</p>
+                        <span>No:888888</span>
+                    </div>
+                    <div class="red-packet-bottom">
+                        立即领取
+                    </div>-->
+                    <a href="#">领取利是</a>
+                    <span class="message-time">2017-1-8</span>
+                </div>
+            </div>
+            <div class="message-send  message-pic flex">
+                <div class="user-avatar"></div>
+                <div class="message-text"><img src="images/tx.jpg" alt=""></div>
+                <span class="message-time">2017-1-8</span>
+            </div>
+            <div class="message-send pa-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    <div class="pa-message-top">
+                        <img src="images/bg.jpg" alt=""> <span>为TA霸屏</span>
+                    </div>
+                    <p>Happy Birthday!!!</p>
+                </div>
+                <span>重金霸屏30秒</span>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar-wrap">
+        <div class="toolbar flex">
+            <span class="iconfont icon-jia"></span> <textarea id="text"></textarea> <span class="send-btn">发送</span>
+        </div>
+        <p class="flex">
+            <span class="iconfont icon-tupian"></span> <span class="iconfont icon-hongbao"></span> <span>霸</span>
+            <span class="iconfont icon-bullhorn"></span> <span class="iconfont icon-kehu"></span>
+        </p>
+        <ul class="toolbar-list hide">
+            <li><i class="iconfont icon-tupian"></i><span>照片</span></li>
+            <li><i class="iconfont icon-hongbao"></i><span>红包</span></li>
+            <li><i class="icon-quanping">霸</i><span>霸屏</span></li>
+            <li><i class="iconfont icon-bullhorn"></i><span>小喇叭</span></li>
+            <li><i class="iconfont icon-kehu"></i><span>在线人数</span></li>
+            <li><i class="iconfont icon-shezhi1"></i><span>个人设置</span></li>
+        </ul>
+    </div>
+    <div class="fix-ico-wrap">
+        <p class="iconfont icon-buchongiconsvg05 fix-ico"></p>
+        <p class="iconfont icon-hongbao fix-ico tada"></p>
+        <p class="iconfont icon-liaotian fix-ico"><span>13</span></p>
+    </div>
+    <div class="user-data-card-wrap hide">
+        <div class="user-data-card">
+            <span class="iconfont icon-gb"></span>
+            <div class="top-content"></div>
+            <div class="bottom-content">
+                <div class="user-avatar"></div>
+                <p><i>奥特曼</i><span class="iconfont icon-nv1">22</span></p>
+                <p class="introduction">哈哈哈哈哈哈</p>
+                <div class="ico-bar flex">
+                    <span class="iconfont icon-liaotian"></span> <span class="iconfont icon-hongbao"></span>
+                    <span class="iconfont icon-buchongiconsvg05"></span> <span class="iconfont icon-icon"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--小喇叭-->
+<div class="horn hide">
+    <div class="horn-user-info flex">
+        <img src="images/tx.jpg" alt=""> <i class="">奥特曼</i> <span class="iconfont icon-bullhorn"></span>
+    </div>
+    <p class="horn-text">
+        哈哈哈哈哈哈哈哈哈啊哈哈哈
+    </p>
+</div>
+
+<div class="left-sidebar-wrap hide">
+    <div class="left-sidebar-content LeftToCenter">
+        <div class="user-message">
+            <img src="images/tx.jpg" alt=""> <span class="rs-user-name">疯猪</span>
+        </div>
+        <ul>
+            <li><span class="iconfont icon-moban"></span>个人资料</li>
+            <li><span class="iconfont icon-jinbi1"></span>我的账户</li>
+            <li><span class="iconfont icon-guanyu"></span>关于嗨撩</li>
+        </ul>
+    </div>
+</div>
+
+<div class="right-sidebar-wrap hide">
+    <div class="right-sidebar-content flex">
+        <div class="rs-top-content flex">
+            <span class="iconfont icon-liaotian"></span>
+            <div class="search-user flex">
+                <span class="iconfont icon-sousuo_sousuo1"></span> <input type="text"/>
+            </div>
+        </div>
+        <ul class="chat-user-list">
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span>1</span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span>1</span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span>1</span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="online-user hide">
+    <div class="in-online-user flex">
+        <div class="ou-top-content flex">
+            <span class="iconfont icon-renshu"></span>
+            <p>在线人数(114人)</p>
+        </div>
+        <div class="sex-screen flex">
+            <div class="boy flex">
+                <span>男生</span> <i class="active"></i>
+            </div>
+            <div class="girl flex">
+                <span>女生</span> <i></i>
+            </div>
+        </div>
+        <ul class="online-user-list">
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="online"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="online"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="online"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+            <li class="flex">
+                <img src="images/tx.jpg" alt="">
+                <div class="name-message">
+                    <p>猪王233</p>
+                    <p>6666</p>
+                </div>
+                <span class="offline"></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--霸屏-->
+<div class="pa-screen flex hide">
+    <span class="iconfont icon-gb"></span>
+    <div class="left-content">
+        <div class="user-info">
+            <img src="images/tx.jpg" alt=""> <i>奥特曼</i>
+        </div>
+        <span>重金霸屏<i>20</i>秒</span>
+        <p class="pa-text">傻逼别发了...</p>
+    </div>
+    <div class="right-content" style="background-image: url(images/pa-bg.png)"></div>
+</div>
+
+<!--聊天界面礼物列表-->
+<div class="chat-gift-wrap hide">
+    <div class="chat-gift-content">
+        <div class="swiper-container1">
+            <div class="swiper-wrapper">
+                <ul class="swiper-slide gift-list">
+                    <li class="active">
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                </ul>
+                <ul class="swiper-slide gift-list">
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                    <li>
+                        <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                        <span class="gift-price">100钻石</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-pagination1"></div>
+        </div>
+        <div class="gift-list-botttom flex">
+            <div class="gift-recharge">
+                充值: <span>123钻石</span><span class="iconfont icon-xiayigeunext"></span>
+            </div>
+            <div class="send-gift flex">
+                <input type="number" placeholder="输入数量"/> <span>赠送</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--发送霸屏-->
+<div class="send-pa-screen hide">
+    <div class="in-send-pa-screen">
+        <span class="iconfont icon-guanbi"></span>
+        <h3>为Ta霸屏</h3>
+        <div class="select flex">
+            <p class="duration-text">请选择时长</p>
+            <span class="iconfont icon-weibiaoti35"></span>
+            <ul class="duration-list hide">
+                <li class="flex">
+                    <p>1000<span class="iconfont icon-zhuanshi">/10秒</span></p>
+                    <span class="iconfont icon-success"></span></li>
+                <li class="flex">
+                    <p>6000<span class="iconfont icon-zhuanshi">/20秒</span></p>
+                    <span class="iconfont icon-success"></span></li>
+                <li class="flex">
+                    <p>8000<span class="iconfont icon-zhuanshi">/30秒</span></p>
+                    <span class="iconfont icon-success"></span></li>
+            </ul>
+        </div>
+        <div class="pa-text-img flex">
+            <textarea class="pa-text" placeholder="请不要发布广告涉黄等内容，霸屏不支持退款"></textarea>
+            <div class="insert-img flex">
+                <p><span class="iconfont icon-jia1"></span>选择图片</p><!--
+                <img src="images/bg.jpg" alt="">-->
+            </div>
+        </div>
+        <div class="open-animate">
+            <input type="checkbox"> <span>开启动画特效</span>
+        </div>
+        <a href="#" class="pa-sumbit">霸屏上墙</a>
+    </div>
+</div>
+
+<!--发红包-->
+<div class="send-red-pakcet-wrap fixed hide">
+    <div class="send-red-pakcet">
+        <span class="iconfont icon-guanbi"></span>
+        <h3>发红包</h3>
+        <div class="amount flex">
+            <i>拼</i> <span>总金额</span> <input type="number" placeholder="0.00"/> <span>元</span>
+        </div>
+        <div class="number flex">
+            <span>红包个数</span> <input type="number" placeholder="填写个数"/> <span>个</span>
+        </div>
+        <div class="message">
+            <textarea placeholder="恭喜发财，大吉大利"></textarea>
+        </div>
+        <div class="show-amount">
+            ￥<span>200.00</span>
+        </div>
+        <a href="#">塞钱进黑卡</a>
+    </div>
+</div>
+
+<!--红包界面-->
+<div class="open-red-packet-wrap hide fixed">
+    <div class="open-red-packet">
+        <!-- <span class="iconfont icon-gb"></span>
+         <div class="open-red-packet-top">
+             <img src="images/tx.jpg" alt="">
+             <p class="send-user-name">小怪兽</p>
+             <p class="red-packet-text">给你发了一张黑卡</p>
+             <p class="red-packet-message">恭喜发财，大吉大利</p>
+         </div>
+         <div class="open-red-packet-bottom">
+             <span class="open-text">开</span>
+         </div>-->
+        <a href="#">领取利是</a>
+    </div>
+</div>
+
+<!--发送小喇叭-->
+<div class="send-horn-wrap hide">
+    <div class="send-horn">
+        <span class="iconfont icon-guanbi"></span>
+        <h3>小喇叭</h3>
+        <textarea placeholder="请不要超过45个字符哦"></textarea>
+        <a href="#">发送</a>
+    </div>
+</div>
+
+<!--抢红包界面-->
+<div class="recevice-red-packet-wrap fixed hide">
+    <div class="loot-all-view hide">
+        <span class="iconfont icon-gb"></span>
+        <div class="sender-message">
+            <img src="images/tx.jpg" alt=""> <span>来晚了～钱已抢光</span>
+        </div>
+        <div class="grap-message">
+            <p>10个红包，1分钟被抢光</p>
+            <ul class="grap-user-list">
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span> <i>手气最佳</i>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+            </ul>
+            <p class="grap-tip">抢到的金额将存入您的钻石中</p>
+        </div>
+    </div>
+    <div class="grap-view">
+        <span class="iconfont icon-gb"></span>
+        <div class="gainer-message">
+            <img src="images/tx.jpg" alt="">
+            <div class="gainer-tip">
+                <p>
+                    <!--<strong class="iconfont icon-xingxing"></strong><span>恭喜您抢到</span><i>大怪兽</i><span>的利是</span><strong class="iconfont icon-xingxing"></strong>-->
+                    <strong class="iconfont icon-xingxing"></strong><i>大怪兽</i><strong class="iconfont icon-xingxing"></strong>
+                </p>
+            </div>
+            <span class="grap-sum">2000</span><span>元</span>
+        </div>
+        <div class="grap-message">
+            <p>10个红包，1分钟被抢光</p>
+            <ul class="grap-user-list">
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span> <i>手气最佳</i>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+                <li class="flex">
+                    <img src="images/tx.jpg" alt="">
+                    <div class="name-time flex">
+                        <p>奥特曼特曼曼</p>
+                        <span>11:03</span>
+                    </div>
+                    <div class="luck">
+                        <span>2000元</span>
+                    </div>
+                </li>
+            </ul>
+            <p class="grap-tip">抢到的金额将存入您的钻石中</p>
+        </div>
+    </div>
+</div>
+
+<!--土豪榜-->
+<!--
+<div class="rank-wrap fixed hide">
+    <div class="rank">
+        <span class="iconfont icon-guanbi"></span>
+        <ul class="rank-list">
+            <li class="top">
+                <h3>土豪榜排名</h3>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt=""> <span>1</span>
+                </div>
+                <p class="rank-name">
+                    Bor_Fan
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+            <li class="flex">
+                <i>2</i>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt=""> <span>2</span>
+                </div>
+                <p class="rank-name">
+                    爱迪生
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+            <li class="flex">
+                <i>3</i>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt=""> <span>3</span>
+                </div>
+                <p class="rank-name">
+                    爱迪生
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+            <li class="flex">
+                <i>4</i>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt="">
+                </div>
+                <p class="rank-name">
+                    爱迪生
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+            <li class="flex">
+                <i>5</i>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt="">
+                </div>
+                <p class="rank-name">
+                    爱迪生
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+            <li class="flex">
+                <i>6</i>
+                <div class="rank-avatar">
+                    <img src="images/tx.jpg" alt="">
+                </div>
+                <p class="rank-name">
+                    爱迪生
+                </p>
+                <div class="masonry">
+                    <span class="iconfont icon-zhuanshi"></span><span class="masonry-num">2000</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>-->
+<div class="rank-wrap fixed hide">
+    <div class="rank">
+        <span class="iconfont icon-gb"></span>
+        <h3>SHOW8BAR排行榜</h3>
+        <p>实时更新·Live Update</p>
+        <ul class="rank-list">
+            <li class="flex">
+                <div class="bg-block" style="width: 100%;"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">1</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">88888</span>
+                </div>
+            </li>
+            <li class="flex">
+                <div class="bg-block" style="width: 80%"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">2</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">20888</span>
+                </div>
+            </li>
+            <li class="flex">
+                <div class="bg-block" style="width: 50%"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">3</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">10088</span>
+                </div>
+            </li>
+            <li class="flex">
+                <div class="bg-block" style="width: 30%"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">4</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">8888</span>
+                </div>
+            </li>
+            <li class="flex">
+                <div class="bg-block" style="width: 25%"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">5</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">888</span>
+                </div>
+            </li>
+            <li class="flex">
+                <div class="bg-block" style="width: 20%"></div>
+                <div class="rank-user-info flex">
+                    <span class="rank-num">6</span> <img src="images/tx.jpg" alt=""> <i>name</i>
+                    <span class="iconfont icon-zhuanshi">200</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--个人资料-->
+<div class="user-data fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>查看资料</p>
+    </div>
+    <div class="user-data-img">
+        <img src="images/bg.jpg" alt="">
+        <div class="scroll-img">
+            <img src="images/tx.jpg" alt=""> <img src="images/tx.jpg" alt=""> <img src="images/tx.jpg" alt="">
+        </div>
+    </div>
+    <ul class="user-data-list">
+        <li>
+            <i>震惊猫</i> <span class="iconfont icon-nv1"></span> <span>27</span>
+        </li>
+        <li>
+            <span>生日:</span> <span>1999年3月3日</span>
+        </li>
+        <li>
+            <span>星座:</span> <span>摩羯座</span>
+        </li>
+        <li>
+            <span>个性签名:</span> <span>是你爸爸就是你爸爸</span>
+        </li>
+    </ul>
+    <div class="user-data-toolbar flex">
+        <span class="iconfont icon-liaotian"></span> <span class="iconfont icon-hongbao"></span>
+        <span class="iconfont icon-buchongiconsvg05"></span> <span class="iconfont icon-xin-"></span>
+    </div>
+</div>
+
+<!--礼物列表-->
+<div class="gift-list-wrap hide">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <ul class="swiper-slide gift-list">
+                <li class="active">
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt=""> <span class="gift-name">小熊</span>
+                    <span class="gift-price">100钻石</span>
+                </li>
+            </ul>
+            <ul class="swiper-slide gift-list">
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+                <li>
+                    <img src="images/doll_s.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="gift-list-botttom flex">
+        <div class="gift-recharge">
+            充值: <span>123钻石</span><span class="iconfont icon-xiayigeunext"></span>
+        </div>
+        <div class="send-gift flex">
+            <input type="number" placeholder="输入数量"/> <span>赠送</span>
+        </div>
+    </div>
+</div>
+
+<!--设置-->
+<div class="setting fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>设置</p>
+    </div>
+    <ul class="setting-list">
+        <li>个人资料<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>我的账户<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>关于嗨聊<span class="iconfont icon-xiayigeunext"></span></li>
+    </ul>
+</div>
+
+<!--个人资料设置-->
+<div class="personal-setting fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>个人资料设置</p>
+    </div>
+    <div class="user-img">
+        <p><span class="iconfont icon-xiangji"></span>上传照片</p>
+        <ul class="flex">
+            <li><img src="images/tx.jpg" alt=""></li>
+            <li><img src="images/tx.jpg" alt=""></li>
+            <li><img src="images/tx.jpg" alt=""></li>
+            <li><img src="images/tx.jpg" alt=""></li>
+            <li><img src="images/tx.jpg" alt=""></li>
+            <li class="add-img"><span class="iconfont icon-add"></span></li>
+        </ul>
+        <p class="upload-tip">最多可上传6张照片</p>
+    </div>
+    <ul class="personal-setting-list">
+        <li class="flex">
+            <span>头像</span>
+            <div class="setting-avatar" style="background-image: url(images/tx.jpg)"></div>
+        </li>
+        <li class="flex">
+            <span>昵称</span> <input type="text" placeholder="请输入昵称"/>
+        </li>
+        <li>
+            <span>性别</span>
+            <select>
+                <option>男</option> <option>女</option>
+            </select>
+        </li>
+        <li class="flex">
+            <span>生日</span> <input type="text" readonly="" id="demo1" placeholder="输入您的生日"/>
+        </li>
+        <li class="flex">
+            <span>星座</span>
+            <p>摩羯座</p>
+        </li>
+        <li>
+            <span>介绍</span> <input type="text"/>
+        </li>
+        <li>
+            <span>介绍</span>
+            <p>哈哈哈哈</p>
+        </li>
+        <li>
+            <span>介绍</span>
+            <p>哈哈哈哈</p>
+        </li>
+        <li>
+            <span>介绍</span>
+            <p>哈哈哈哈</p>
+        </li>
+        <li>
+            <span>介绍</span>
+            <p>哈哈哈哈</p>
+        </li>
+        <li>
+            <span>介绍</span>
+            <p>哈哈哈哈</p>
+        </li>
+        <li>
+            <span>星座</span>
+            <p>摩羯座</p>
+        </li>
+    </ul>
+    <a class="complete-btn" href="#">完成</a>
+</div>
+
+<!--我的账户-->
+<div class="my-account fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>我的账户</p>
+    </div>
+    <div class="my-account-message flex">
+        <div>
+            <p>我收到的钻石<span class="iconfont icon-zhuanshi"></span></p>
+            <span>2000</span>
+        </div>
+        <div>
+            <p>我收到的红包<span class="iconfont icon-hongbao"></span></p>
+            <span>2000</span>
+        </div>
+    </div>
+    <ul class="my-account-list">
+        <li>我的钻石<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>充值钻石<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>我的红包<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>收到的礼物<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>我的提现<span class="iconfont icon-xiayigeunext"></span></li>
+    </ul>
+</div>
+
+<!--我的钻石-->
+<div class="my-masonry fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>我的钻石</p>
+    </div>
+    <ul class="my-masonry-list">
+        <li>本月钻石收益<i class="iconfont icon-zhuanshi"></i><span>2000</span></li>
+        <li>钻石余额(个)<span>300</span></li>
+        <li>提现记录<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>消费记录<span class="iconfont icon-xiayigeunext"></span></li>
+        <li>充值记录<span class="iconfont icon-xiayigeunext"></span></li>
+    </ul>
+    <a href="#" class="cash-in-btn">立即提现</a>
+</div>
+
+<!--充值钻石-->
+<div class="recharge-masonry fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>充值钻石</p>
+    </div>
+    <ul class="recharge-masonry-list">
+        <li>1000<i class="iconfont icon-zhuanshi"></i><span>10.00元<i class="iconfont icon-success"></i></span></li>
+        <li>10000<i class="iconfont icon-zhuanshi"></i><span>100.00元<i class="iconfont icon-success"></i></span></li>
+        <li>30000<i class="iconfont icon-zhuanshi"></i><span>300.00元<i class="iconfont icon-success"></i></span></li>
+        <li>100000<i class="iconfont icon-zhuanshi"></i><span>1000.00元<i class="iconfont icon-success"></i></span></li>
+    </ul>
+    <p>充值成功，立即到账!</p>
+    <a href="#" class="recharge-btn">立即充值</a>
+</div>
+
+<!--提现记录-->
+<div class="cash-in-record fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>提现记录</p>
+    </div>
+    <div class="cash-in-message">
+        <p class="already-present">已提现金额：<span>5000元</span></p>
+        <p class="cash-in-list-title"><span>日期</span><span>提现金额</span><span>状态</span></p>
+        <ul class="cash-in-message-list">
+            <li>
+                <span>17-09-01</span> <span>￥100.00</span> <span>审核中</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥100.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥100.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+            <li>
+                <span>17-09-01</span> <span>￥1000.00</span> <span>已支付</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--消费记录-->
+<div class="spend-record fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>消费记录</p>
+    </div>
+    <div class="spend-message">
+        <p class="masonry-balance">钻石余额：<span>50000</span></p>
+        <ul class="spend-message-list">
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-199</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-199</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+            <li class="flex">
+                <p><span>礼物</span><span>17-09-01 23:00</span></p>
+                <p>-9000</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--充值记录-->
+<div class="recharge-record fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>充值记录</p>
+    </div>
+    <div class="recharge-record-list-wrap">
+        <ul class="recharge-record-list">
+            <li>本月</li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+1000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+10000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+2000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+500</p>
+            </li>
+        </ul>
+        <ul class="recharge-record-list">
+            <li>2月</li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+1000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+10000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+2000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+500</p>
+            </li>
+        </ul>
+        <ul class="recharge-record-list">
+            <li>3月</li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+1000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+10000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+2000</p>
+            </li>
+            <li class="flex">
+                <p><span>充值成功</span><span>17-09-01 23:00</span></p>
+                <p>+500</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--立即提现-->
+<div class="cash-in fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>充值记录</p>
+    </div>
+    <div class="cash-in-content">
+        <h3>提现方式</h3>
+        <div class="cash-in-way">
+            <span class="iconfont icon-weixinzhifu"></span> <span>微信钱包</span>
+        </div>
+        <p class="cash-in-tip">可体现金额<span>50000.00</span>元</p>
+        <div class="input-amount flex">
+            <span>提现金额</span> <input type="number" placeholder="输入金额大于2元"/> <span>元</span>
+        </div>
+        <p class="counter-fee">手续费：<span>3%</span></p>
+    </div>
+    <a class="cash-in-btn" href="#">提现</a>
+</div>
+
+<!--我的红包-->
+<div class="my-red-packet fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>我的红包</p>
+    </div>
+    <div class="my-rp-information flex">
+        <p>收到的红包:<span>380000</span>元</p>
+        <p>发出的红包:<span>3800</span>元</p>
+    </div>
+    <div class="my-rp-detail-wrap">
+        <ul class="my-rp-detail">
+            <li>本月</li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>+1000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>-10000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>+2000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>-500</p>
+            </li>
+        </ul>
+        <ul class="my-rp-detail">
+            <li>本月</li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>+1000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>-10000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>+2000</p>
+            </li>
+            <li class="flex">
+                <p><span>红包</span><span>17-09-01 23:00</span></p>
+                <p>-500</p>
+            </li>
+        </ul>
+    </div>
+    <a class="cash-in-btn" href="#">提现</a>
+</div>
+
+<!--红包详情-->
+<div class="red-packet-detail fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>红包详情</p>
+    </div>
+    <div class="sender-detail">
+        <div class="top-content flex">
+            <img src="images/tx.jpg" alt="">
+            <div class="user-information">
+                <p><i>小小怪兽</i><span class="iconfont icon-nan boy">24</span></p>
+                <p>
+                    <span class="iconfont icon-xingxing"></span> <span class="iconfont icon-xingxing"></span>
+                    <span class="iconfont icon-xingxing"></span> <span class="iconfont icon-xingxing"></span>
+                    <span class="iconfont icon-xingxing"></span>
+                </p>
+            </div>
+            <span>￥200</span>
+        </div>
+        <div class="bottom-content flex">
+            <div class="red-packet-status">
+                <p>个数: <span>3个</span></p>
+                <p>酒吧: <span>show8Bar</span></p>
+                <p>状态: <span>已抢完</span></p>
+            </div>
+            <p>2017.03.04</p>
+        </div>
+    </div>
+    <h3>红包记录</h3>
+    <ul class="red-packet-record">
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <p><i>你爸爸</i><span>2017.04.04 23:54</span></p>
+            <span>￥50</span>
+        </li>
+    </ul>
+</div>
+
+<!--收到的礼物-->
+<div class="recevice-gift fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>收到的礼物</p>
+    </div>
+    <ul class="gift-information">
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <li class="flex">
+            <img src="images/tx.jpg" alt="">
+            <div>
+                <span>比基尼x5</span>
+                <p>价值:<span>100</span><i class="iconfont icon-zhuanshi"></i>可提现:10.00元</p>
+                <p>酒吧: show8Bar</p>
+            </div>
+            <span>2017.09.01</span>
+        </li>
+        <a class="cash-in-btn" href="#">提现</a>
+</div>
+
+<!--私聊-->
+<div class="private-chat-wrap fixed hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>username</p>
+    </div>
+    <div class="message-content">
+        <div class="in-message-content">
+            <div class="message-receive flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">快说快说快说快说快说快说快说快说</div>
+                <span class="message-time">2017-1-8</span>
+                <ul class="user-opera-list flex hide">
+                    <li><span class="iconfont icon-buchongiconsvg05"></span>礼物</li>
+                    <li><span class="iconfont icon-hongbao"></span>红包</li>
+                    <li><span class="iconfont icon-liaotian"></span>信息</li>
+                    <li><span class="iconfont icon-info"></span>资料</li>
+                    <li><span class="iconfont icon-weixin"></span>微信</li>
+                </ul>
+            </div>
+            <div class="message-receive message-gift flex">
+                <div class="user-avatar"></div>
+                <p class="sender-name flex"><i>拉卡</i>送<i>卡拉</i><span>飞机</span><span class="gift">×10</span></p>
+            </div>
+            <div class="message-receive message-pic flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text"><img src="images/bg.jpg" alt=""></div>
+            </div>
+            <div class="message-receive pa-message flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">
+                    <div class="pa-message-top">
+                        <img src="images/bg.jpg" alt=""> <span>为TA霸屏</span>
+                    </div>
+                    <p>Happy Birthday!!!</p>
+                </div>
+                <span>重金霸屏30秒</span>
+            </div>
+            <div class="message-receive horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <p class="message-text">喇叭内容喇叭内容喇叭内容</p>
+            </div>
+            <div class="message-receive red-packet flex">
+                <div class="user-avatar"></div>
+                <div class="user-name">拉卡</div>
+                <div class="message-text">
+                    <!-- <div class="red-packet-top">
+                         <p>恭喜发财，大吉大利</p>
+                         <span>No:888888</span>
+                     </div>
+                     <div class="red-packet-bottom">
+                         立即领取
+                     </div>-->
+                    <a href="#">领取利是</a>
+                </div>
+            </div>
+            <div class="message-send text-content flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">快说快说快说快说快说快说快说快说</div>
+            </div>
+            <div class="message-send red-packet flex">
+                <div class="user-avatar"></div>
+                <div class="message-text"><!--
+                    <div class="red-packet-top">
+                        <p>恭喜发财，大吉大利</p>
+                        <span>No:888888</span>
+                    </div>
+                    <div class="red-packet-bottom">
+                        立即领取
+                    </div>-->
+                    <a href="#">领取利是</a>
+                </div>
+            </div>
+            <div class="message-send  message-pic flex">
+                <div class="user-avatar"></div>
+                <div class="message-text"><img src="images/tx.jpg" alt=""></div>
+            </div>
+            <div class="message-send pa-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    <div class="pa-message-top">
+                        <img src="images/bg.jpg" alt=""> <span>为TA霸屏</span>
+                    </div>
+                    <p>Happy Birthday!!!</p>
+                </div>
+                <span>重金霸屏30秒</span>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+            <div class="message-send horn-message flex">
+                <div class="user-avatar"></div>
+                <div class="message-text">
+                    喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容喇叭内容
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toolbar-wrap">
+        <div class="toolbar flex">
+            <textarea id="text1"></textarea> <span class="send-btn">发送</span>
+        </div>
+        <p class="flex">
+            <span class="iconfont icon-tupian"></span> <span class="iconfont icon-hongbao"></span>
+        </p>
+    </div>
+</div>
+
+<!--弹窗-->
+<div class="modal-overlay fixed flex hide">
+    <div class="modal">
+        <div class="modal-inner flex">
+            <span>坎坎坷坷扩扩扩扩扩扩扩扩扩扩扩扩扩</span> <img src="images/qrcode1.png" alt="">
+        </div>
+        <div class="modal-canel">确定</div>
+    </div>
+</div>
+
+<!--长按禁言-->
+<div class="message-operation fixed hide">
+    <div class="in-message-operation">
+        <ul>
+            <li class="message-operation-user">
+                <img src="images/tx.jpg" alt="">
+                <p>酷酷酷酷酷酷酷酷酷酷</p>
+            </li>
+            <li>禁言</li>
+            <li>删除</li>
+            <li>撤回</li>
+        </ul>
+    </div>
+</div>
+
+<!--选择禁言时间-->
+<div class="popup fixed hide">
+    <div class="navbar">
+        <span href="#" class="close-popup">关闭</span>
+    </div>
+    <p class="popup-title">选填禁言时间</p>
+    <div class="list-block">
+        <ul>
+            <li class="flex">
+                <p class="item-title label">禁言时间</p>
+                <input type="number" placeholder="请输入禁言时间" id="is_silence_time">
+            </li>
+            <li class="flex">
+                <p class="item-title label">单位</p>
+                <select id="is_silence_type" onchange="if($(this).val()==-1)
+                                <option value=" 60
+                ">分钟</option><option value="3600">小时</option> <option value="86400">天</option>
+                <option value="-1">永久</option></select>
+            </li>
+        </ul>
+    </div>
+    <button>确认</button>
+</div>
+
+<!--我的账户扫码-->
+<div class="scan-code hide">
+    <div class="navbar">
+        <p><span class="iconfont icon-houtui"></span>我的账户</p>
+    </div>
+    <div class="scan-code-content">
+        <div class="in-sc-content flex">
+            <img src="images/qrcode.png" alt="">
+            <p>扫一扫关注嗨撩公众号自定义菜单进入提现</p>
+        </div>
+    </div>
+    <div class="sc-toolbar flex">
+        <img src="images/tipbottom.png" alt="">
+    </div>
+</div>
+
+<!--黄瓜动画 start-->
+<div class="cucumber-animate-wrap hide">
+    <span class="iconfont icon-gb"></span>
+    <div class="cucumber-animate cucumber-animateIn"></div>
+</div>
+
+<!--火箭动画 start-->
+<div class="rocket-animate-wrap hide">
+    <div class="rocket-animate rocket-animateIn"></div>
+</div>
+<!--啤酒动画 start-->
+<div class="wine-animate-wrap hide">
+    <div class="wine-animate wine-animateIn"></div>
+</div>
+<!--飞机动画 start-->
+<div class="plane-animate-wrap hide">
+    <img class="plane-animate plane-animateIn" src="images/plane/plane.png" alt="">
+</div>
+<!--小熊动画 start-->
+<div class="dolls-animate-wrap hide">
+    <div class="dolls-animate dolls-animateIng"></div>
+</div>
+<!--甜甜圈动画 start-->
+<div class="ttq-animate-wrap hide">
+    <img src="images/ttq/ttq.png" class="ttq-animate ttq-animateIn" alt="">
+</div>
+<!--小岛动画 start-->
+<div class="island-animate-wrap hide">
+    <div id="island" class="island-animate island-animateIn">
+        <div class="bird1"><img src="images/island/bird1.png" alt=""></div>
+        <div class="bird2"><img src="images/island/bird2.png" alt=""></div>
+        <div class="bird3"><img src="images/island/bird3.png" alt=""></div>
+        <div class="cloud1"><img src="images/island/cloud1.png" alt=""></div>
+        <div class="cloud2"><img src="images/island/cloud2.png" alt=""></div>
+        <div class="cloud3"><img src="images/island/cloud2.png" alt=""></div>
+        <div class="cloud4"><img src="images/island/cloud1.png" alt=""></div>
+        <div class="tree"><img src="images/island/tree.png" alt=""></div>
+        <img src="images/island/island.png" alt="">
+    </div>
+</div>
+<!--小岛动画 end-->
+
+<!--游艇动画 start-->
+<div class="ship-animate-wrap hide">
+    <div class="ship-animate ship-animateIn">
+        <img src="images/ship/ship.png" alt="">
+        <div class="water1"></div>
+        <div class="water2"></div>
+    </div>
+</div>
+<!--游艇动画 end-->
+
+<!--游轮动画 start-->
+<div class="cruise-animate-wrap hide">
+    <div id="img" class="cruise-animate cruise-animateIn">
+        <img src="images/cruise/cruise.png" alt="">
+        <div class="water"></div>
+        <div class="water"></div>
+    </div>
+    <button id="btn">click</button>
+</div>
+<!--游轮动画 end-->
+
+<!--礼物赠送信息 start-->
+<div class="sender hide">
+    <img src="images/tx4.jpg" alt="">
+    <p><span class="sender-name">里</span></p>
+</div>
+<p class="song-word hide">送</p>
+<div class="gainer hide">
+    <p><span class="gainer-name">穆亩</span></p>
+    <img src="images/tx4.jpg" alt="">
+</div>
+
+<!--赠送礼物引导-->
+<div class="swiper-container2 gift-guide hide fixed">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <img src="images/gift_guide.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/gift_guide1.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img src="images/gift_guide2.jpg" class="swiper-slide">
+            <a href="#"></a>
+        </div>
+    </div>
+</div>
+
+<script src="js/rem.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/swiper-3.4.2.jquery.min.js"></script>
+<script src="js/lCalendar.min.js"></script>
+<script>
+    /*禁止微信下拉弹性效果*/
+    var elchat = $('.chat-content');
+    $.smartScroll = function(container, selectorScrollable){
+        // 如果没有滚动容器选择器，或者已经绑定了滚动时间，忽略
+        if(!selectorScrollable || container.data('isBindScroll')){
+            return;
+        }
+
+        // 是否是搓浏览器
+        // 自己在这里添加判断和筛选
+        var isSBBrowser;
+
+        var data = {
+            posY : 0,
+            maxscroll : 0
+        };
+
+        // 事件处理
+        container.on({
+            touchstart : function(){
+                var events = event.touches[0] || event;
+
+                // 先求得是不是滚动元素或者滚动元素的子元素
+                var elTarget = $(event.target);
+
+                if(!elTarget.length){
+                    return;
+                }
+
+                var elScroll;
+
+                // 获取标记的滚动元素，自身或子元素皆可
+                if(elTarget.is(selectorScrollable)){
+                    elScroll = elTarget;
+                } else if((elScroll = elTarget.parents(selectorScrollable)).length == 0){
+                    elScroll = null;
+                }
+
+                if(!elScroll){
+                    return;
+                }
+
+                // 当前滚动元素标记
+                data.elScroll = elScroll;
+                // 垂直位置标记
+                data.posY = events.pageY;
+                data.scrollY = elScroll.scrollTop();
+                // 是否可以滚动
+                data.maxscroll = elScroll[0].scrollHeight - elScroll[0].clientHeight;
+            },
+            touchmove : function(){
+                // 如果不足于滚动，则禁止触发整个窗体元素的滚动
+                if(data.maxscroll <= 0 || isSBBrowser){
+                    // 禁止滚动
+                    event.preventDefault();
+                }
+                // 滚动元素
+                var elScroll = data.elScroll;
+
+                // 当前的滚动高度
+                var scrollTop = elScroll.scrollTop();
+
+                // 现在移动的垂直位置，用来判断是往上移动还是往下
+                var events = event.touches[0] || event;
+                // 移动距离
+                var distanceY = events.pageY - data.posY;
+
+                if(isSBBrowser){
+                    elScroll.scrollTop(data.scrollY - distanceY);
+                    elScroll.trigger('scroll');
+                    return;
+                }
+
+                // 上下边缘检测
+                if(distanceY > 0 && scrollTop == 0){
+                    // 往上滑，并且到头
+                    // 禁止滚动的默认行为
+                    event.preventDefault();
+                    return;
+                }
+
+                // 下边缘检测
+                if(distanceY < 0 && (scrollTop + 1 >= data.maxscroll)){
+                    // 往下滑，并且到头
+                    // 禁止滚动的默认行为
+                    event.preventDefault();
+                    return;
+                }
+            },
+            touchend : function(){
+                data.maxscroll = 0;
+            }
+        });
+
+        // 防止多次重复绑定
+        container.data('isBindScroll', false);
+    };
+    $.smartScroll(elchat, '.message-content');
+    $.smartScroll($('.right-sidebar-content'), '.chat-user-list');
+    $.smartScroll($('.in-online-user'), '.online-user-list');
+    $.smartScroll($('.select'), '.duration-list');
+    $.smartScroll($('.cash-in-message'), '.cash-in-message-list');
+    $.smartScroll($('.spend-message'), '.spend-message-list');
+    $.smartScroll($('.recharge-record'), '.recharge-record-list-wrap');
+    $.smartScroll($('.my-red-packet'), '.my-rp-detail-wrap');
+    $.smartScroll($('.red-packet-detail'), '.red-packet-record');
+    $.smartScroll($('.recevice-gift'), '.gift-information');
+    $.smartScroll($('.rank'), '.rank-list');
+
+    /*弹出资料卡*/
+    $('.user-avatar').click(function(){
+        $('.user-data-card-wrap').removeClass('hide');
+    })
+
+    $('.user-data-card').find('.icon-gb').click(function(){
+        $(this).parents('.user-data-card-wrap').addClass('hide');
+    })
+
+    $('.user-data').find('.icon-houtui').click(function(){
+        $(this).parents('.user-data').removeClass('page-from-right-to-center').addClass('page-from-center-to-right');
+        $('.chat-content').removeClass('page-from-center-to-left').addClass('page-from-left-to-content');
+        setTimeout(function(){
+            $('.user-data').addClass("hide");
+        }, 400)
+    })
+
+    /*滚动到底部(发送方)*/
+    function sendMessage(id, class_name){
+        $(id).keyup(function(e){
+            if(e.keyCode == 13){
+                var v = $(id).val();
+                var date = new Date();
+                var send_date = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+                var dom = "<div class='message-receive flex'><div class='user-avatar'></div><div class='user-name'>小怪兽</div><div class='message-text'>" + v + "</div></div>";
+                if(v == ""){
+                    return false;
+                }
+                $(class_name).find('.in-message-content').append(dom);
+                var message = $(class_name).find('.message-content').height();
+                var in_message = $(class_name).find('.in-message-content').outerHeight(true);
+                $(class_name).find('.message-content').scrollTop(in_message - message);
+                $(id).val("");
+            }
+        })
+    }
+    sendMessage('#text', '.chat-content');
+    sendMessage('#text1', '.private-chat-wrap');
+
+    /* /!*滚动到底部(接收方)*!/
+     $('#btn').on('touchend', function(){
+     var v = $('#text').val();
+     var date = new Date();
+     var send_date = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+     var msg_chat_scrolltop = $('.message-content').scrollTop();
+     var dom = "<div class='message-receive flex'><div class='user-avatar'></div><div class='user-name'>小怪兽</div><div class='message-text'>" + v + "</div></div>";
+     if(v == ""){
+     return false;
+     }
+     $('.in-message-content').append(dom);
+     var scroll_bottom = $('.in-message-content').outerHeight(true) - $('.message-content').height();
+     if(scroll_bottom - msg_chat_scrolltop < 600){
+     $('.message-content').scrollTop(scroll_bottom);
+     }
+     $('#text').val("");
+     })*/
+
+    /*工具栏图标*/
+    function toolBar(class_name){
+        $('.toolbar').find('.icon-jia').click(function(){
+            $(class_name).find(".toolbar-list").toggleClass("hide");
+            var tool_wrap_h = $(class_name).find('.toolbar-wrap').height();
+            $(class_name).find(".message-content").css({
+                paddingBottom : tool_wrap_h
+            })
+            var message = $(class_name).find('.message-content').height();
+            var in_message = $(class_name).find('.in-message-content').outerHeight(true);
+
+            $(class_name).find('.message-content').scrollTop(in_message - message);
+        })
+    }
+    toolBar('.chat-content');
+    toolBar('.private-chat-wrap');
+
+    /*获取焦点滚到底部*/
+    $('#text').focus(function(){
+        var message = $('.chat-content').find('.message-content').height();
+        var in_message = $('.chat-content').find('.in-message-content').outerHeight(true);
+        $('.chat-content').find('.message-content').scrollTop(in_message - message);
+    })
+
+    /*滑动页面动画*//*
+     var list='<ul class="user-opera-list flex" id="list"><li><span class="iconfont icon-buchongiconsvg05"></span>礼物</li><li><span class="iconfont icon-hongbao"></span>红包</li><li><span class="iconfont icon-liaotian"></span>信息</li><li><span class="iconfont icon-info"></span>资料</li><li><span class="iconfont icon-weixin"></span>微信</li></ul>';
+     */
+    var bool;
+    $(".private-chat-wrap .message-receive").find(".message-text").on("touchstart", function(e){
+        bool = true;
+        startX = e.originalEvent.changedTouches[0].pageX,
+                startY = e.originalEvent.changedTouches[0].pageY;
+    });
+    $(".private-chat-wrap .message-receive").find(".message-text").on("touchmove", function(e){
+        moveEndX = e.originalEvent.changedTouches[0].pageX,
+                moveEndY = e.originalEvent.changedTouches[0].pageY,
+                X = moveEndX - startX,
+                Y = moveEndY - startY;
+        if(X > 100){
+            e.preventDefault();
+        }
+        else if(X < -250){
+            /*if(bool){
+             $(this).parent().append(list);
+             bool=false;
+             console.log(bool);
+             }*/
+            $(this).parent().remove();
+        }
+    });
+
+    $('body').delegate('#list', 'click', function(e){
+        $('#list').remove();
+    })
+
+    /*点击设置图标*/
+    $('.setting-rank > p').on('touchend', function(){
+        $('.left-sidebar-wrap').removeClass('hide');
+        $(this).find('.icon-shezhi').addClass('ico-setting');
+        $('.left-sidebar-content').removeClass('CenterToLeft').addClass('LeftToCenter');
+    })
+
+    $('.left-sidebar-wrap').on('touchend', function(e){
+        if(e.target.className == 'left-sidebar-wrap'){
+            $('.left-sidebar-content').removeClass('LeftToCenter').addClass('CenterToLeft');
+            setTimeout(function(){
+                $('.left-sidebar-wrap').addClass('hide');
+            }, 400)
+            $('.icon-shezhi').removeClass('ico-setting');
+        }
+    })
+
+    /*右边栏滑出*/
+    function asideAnimate(eventwrap, ico, wrap, content, wrapName){
+        $(eventwrap).find(ico).click(function(){
+            $(wrap).removeClass('hide');
+            $(content).removeClass('CenterToRight').addClass('RightToCenter');
+        })
+
+        $(wrap).on('touchend', function(e){
+            if(e.target.className == wrapName){
+                $(content).removeClass('RightToCenter').addClass('CenterToRight');
+                setTimeout(function(){
+                    $(wrap).addClass('hide');
+                }, 400)
+            }
+        })
+    }
+    asideAnimate('.fix-ico-wrap', '.icon-liaotian', '.right-sidebar-wrap', '.right-sidebar-content', 'right-sidebar-wrap');
+    asideAnimate('.toolbar-wrap', '.icon-kehu', '.online-user', '.in-online-user', 'online-user');
+    /*
+     $('.toolbar-list').find('.icon-kehu').click(function(){
+     $('.online-user').removeClass('hide');
+     $('.in-online-user').removeClass('CenterToRight').addClass('RightToCenter');
+     })
+
+     $('.online-user').on('touchend', function(e){
+     if(e.target.className == 'online-user'){
+     $('.in-online-user').removeClass('RightToCenter').addClass('CenterToRight');
+     setTimeout(function(){
+     $('.online-user').addClass('hide');
+     }, 400)
+     }
+     })*/
+
+    $('.too').find('.icon-liaotian').click(function(){
+        $('.right-sidebar-wrap').removeClass('hide');
+        $('.right-sidebar-content').removeClass('CenterToRight').addClass('RightToCenter');
+    })
+    $('.icon-houtui').click(function(){
+        var this_ico = $(this);
+        this_ico.parents('.navbar').parent().addClass('CenterToRight');
+        setTimeout(function(){
+            this_ico.parents('.navbar').parent().removeClass('CenterToRight').addClass('hide');
+        }, 400)
+    })
+    $('.show-rank-bar li:last-of-type').click(function(){
+        $('.rank-wrap').removeClass('hide');
+    })
+
+    $('.rank-wrap').find('.icon-gb').click(function(){
+        $('.rank-wrap').addClass('hide');
+    })
+
+    /*下拉表单*/
+    var duration_inner = $('.duration-text').text();
+    $('.duration-text').click(function(){
+        $('.duration-list').toggleClass('hide');
+    });
+    $('.select').on('touchend', '.duration-list li', function(e){
+        e.preventDefault();
+        var duration_val = $(this).find('p').html();
+        $('.select').find('.duration-list li').removeClass('active');
+        $('.duration-text').html(duration_val).css('color', '#000');
+        $(this).addClass('active').parent().addClass('hide');
+    });
+    $('.send-pa-screen').on('touchend', function(e){
+        if(e.target.className != 'duration-text'){
+            $('.duration-list').addClass('hide');
+        }
+    });
+
+    $('.icon-quanping').on('touchend', function(){
+        $('.send-pa-screen').removeClass('hide');
+    })
+    $('.send-pa-screen').find('.icon-guanbi').on('touchend', function(){
+        $(this).parents('.send-pa-screen').addClass('hide');
+    })
+
+    /*图片浏览器显示隐藏*/
+    $(document).ready(function(){
+        var img_storage;
+
+        function photoBrowser(class_name){
+            $(class_name).on('click', 'img', function(){
+                img_storage = $(this).attr('src');
+                $('body').append('<div class="photo-browser flex fixed"><img src="' + img_storage + '" alt=""></div>');
+                $('.photo-browser').addClass('photo-browser-in');
+            })
+        }
+        photoBrowser('.message-receive');
+        photoBrowser('.message-send');
+
+        $('body').delegate('.photo-browser', 'touchend', function(){
+            $('.photo-browser').addClass('photo-browser-out');
+            setTimeout(function(){
+                $('.photo-browser').remove();
+            }, 400)
+        })
+    })
+
+    var flag = true;
+    var flag1 = true;
+    function doSwiper(){
+        var mySwiper = new Swiper('.swiper-container', {
+            direction : 'horizontal',
+            loop : false,
+            pagination : '.swiper-pagination'
+        })
+    }
+
+    /*弹出礼物列表*/
+    $('.user-data').find('.icon-buchongiconsvg05').on('touchend', function(){
+        $('.gift-list-wrap').removeClass('hide topToBottom').addClass('bottomToTop');
+        if(flag){
+            doSwiper();
+        }
+    })
+
+    $('.gift-list-wrap').on('touchend', function(e){
+        if(e.target.className.indexOf('gift-list-wrap') == 0){
+            $(this).removeClass('bottomToTop').addClass('topToBottom');
+            flag = false;
+        }
+    })
+
+    $('.fix-ico-wrap').find('.icon-buchongiconsvg05').on('touchend', function(){
+        $('.chat-gift-wrap').removeClass('hide');
+        if(flag1){
+            doSwiper1();
+        }
+    })
+
+    $('.chat-gift-wrap').on('touchend', function(e){
+        e.stopPropagation();
+        if(e.target.className == 'chat-gift-wrap'){
+            $(this).addClass('hide');
+            flag1 = false;
+        }
+    })
+
+    function doSwiper1(){
+        var mySwiper1 = new Swiper('.swiper-container1', {
+            direction : 'horizontal',
+            loop : false,
+            pagination : '.swiper-pagination1'
+        })
+    }
+
+    /*选择礼物*/
+    $('.gift-list').find('li').on('touchstart', function(e){
+        e.preventDefault();
+        $(this).removeClass('touchUp');
+        $(this).addClass('touchDown');
+    })
+
+    $('.gift-list').find('li').on('touchend', function(e){
+        e.preventDefault();
+        $(this).addClass('touchUp');
+        $(this).removeClass('touchDown');
+        setTimeout(function(){
+            $('.gift-list').find('li').removeClass('touchUp');
+        }, 200)
+    })
+
+    $('.gift-list > li').click(function(){
+        $('.gift-list').find('li').removeClass('active');
+        $(this).addClass('active');
+    })
+
+    var calendar = new lCalendar();
+    calendar.init({
+        'trigger' : '#demo1',
+        'type' : 'date'
+    });
+
+    var mySwiper2 = new Swiper('.swiper-container2', {
+        direction : 'horizontal',
+        loop : false,
+        effect : "coverflow"
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .info{ width: 25%; height: 300px; padding: 50px; text-align: center; position: fixed; top: 0; left: 0; bottom: 0; right: 0; margin: auto; background: #FFF; border-radius: 10px; animation: bounceIn .6s; }
+        .info img{ display: inline-block; }
+        .info p{ font-size: 20px; }
+        .info a{ border: 1px solid transparent; font-size: 20px; color: #fff; background-color: #5bc0de; border-color: #5bc0de; padding: 6px 30px; border-radius: 4px; outline: none; }
+        .info a:active,.info a:hover{ color: #fff; background-color: #31b0d5; border-color: #269abc; cursor: pointer; }
+        .info span{ display: block; width: 100%; font-size: 16px;   height: 40px; line-height: 40px; }
+        @keyframes bounceIn{
+            0%, 100%, 20%, 40%, 60%, 80%{ -webkit-transition-timing-function:cubic-bezier(0.215, .61, .355, 1); transition-timing-function:cubic-bezier(0.215, .61, .355, 1) }
+            0%{ opacity:0; -webkit-transform:scale3d(.3, .3, .3); -ms-transform:scale3d(.3, .3, .3); transform:scale3d(.3, .3, .3) }
+            20%{ -webkit-transform:scale3d(1.1, 1.1, 1.1); -ms-transform:scale3d(1.1, 1.1, 1.1); transform:scale3d(1.1, 1.1, 1.1) }
+            40%{ -webkit-transform:scale3d(.9, .9, .9); -ms-transform:scale3d(.9, .9, .9); transform:scale3d(.9, .9, .9) }
+            60%{ opacity:1; -webkit-transform:scale3d(1.03, 1.03, 1.03); -ms-transform:scale3d(1.03, 1.03, 1.03); transform:scale3d(1.03, 1.03, 1.03) }
+            80%{ -webkit-transform:scale3d(.97, .97, .97); -ms-transform:scale3d(.97, .97, .97); transform:scale3d(.97, .97, .97) }
+            100%{ opacity:1; -webkit-transform:scale3d(1, 1, 1); -ms-transform:scale3d(1, 1, 1); transform:scale3d(1, 1, 1) }
+        }
+    </style>
+</head>
+<body>
+        <div id="ajax-text"></div>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script>
+        $(function(){
+            $.ajax({
+                type: 'GET',
+                url: "https://cnodejs.org/api/v1/topics",
+                dataType: 'json',
+                success: function(data){
+                    if(data.success){
+                        $('#ajax-text').html(data.data[1].content);
+                    }else {
+                        alert(JSON.stringify(data));
+                    }
+                },
+                error: function(data){
+                    alert(JSON.stringify(data));
+                }
+            })
+        })
+    </script>
+</body>
+</html>
