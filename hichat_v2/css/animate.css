@@ -1,0 +1,323 @@
+/*loading动画*/
+@keyframes logo-shadow{
+0%{ box-shadow:0 0 100px #d54cc2; }
+50%{ box-shadow:0 0 50px #d54cc2; }
+80%{ box-shadow:0 0 100px #d54cc2; }
+}
+@-webkit-keyframes logo-shadow{
+0%{ box-shadow:0 0 100px #d54cc2; }
+50%{ box-shadow:0 0 50px #d54cc2; }
+80%{ box-shadow:0 0 100px #d54cc2; }
+}
+@keyframes logo-img-shadow{
+0%{ transform:rotateY(0deg) }
+30%{ transform:rotateY(180deg) }
+60%{ transform:rotateY(0deg) }
+100%{ transform:rotateY(0deg) }
+}
+@-webkit-keyframes logo-img-shadow{
+0%{ transform:rotateY(0deg) }
+30%{ transform:rotateY(180deg) }
+60%{ transform:rotateY(0deg) }
+100%{ transform:rotateY(0deg) }
+}
+
+/*聊天小图标动画*/
+@-webkit-keyframes tada{
+0%{ -webkit-transform:scale3d(1, 1, 1); -ms-transform:scale3d(1, 1, 1); transform:scale3d(1, 1, 1) }
+10%, 20%{ -webkit-transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg); -ms-transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg); transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg) }
+30%, 50%, 70%, 90%{ -webkit-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg); -ms-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg); transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg) }
+40%, 60%, 80%{ -webkit-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg); -ms-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg); transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg) }
+100%{ -webkit-transform:scale3d(1, 1, 1); -ms-transform:scale3d(1, 1, 1); transform:scale3d(1, 1, 1) }
+}
+
+@keyframes tada{
+0%{ -webkit-transform:scale3d(1, 1, 1); -ms-transform:scale3d(1, 1, 1); transform:scale3d(1, 1, 1) }
+10%, 20%{ -webkit-transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg); -ms-transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg); transform:scale3d(.95, .95, .95) rotate3d(0, 0, 1, -6deg) }
+30%, 50%, 70%, 90%{ -webkit-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg); -ms-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg); transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, 6deg) }
+40%, 60%, 80%{ -webkit-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg); -ms-transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg); transform:scale3d(1.05, 1.05, 1.05) rotate3d(0, 0, 1, -6deg) }
+100%{ -webkit-transform:scale3d(1, 1, 1); -ms-transform:scale3d(1, 1, 1); transform:scale3d(1, 1, 1) }
+}
+
+/*页面切换动画*/
+@-webkit-keyframes pageFromRightToCenter{
+from{ -webkit-transform:translate3d(100%, 0, 0) }
+to{ -webkit-transform:translate3d(0, 0, 0) }
+}
+
+@keyframes pageFromRightToCenter{
+from{ transform:translate3d(100%, 0, 0) }
+to{ transform:translate3d(0, 0, 0) }
+}
+
+@-webkit-keyframes pageFromCenterToRight{
+from{ -webkit-transform:translate3d(0, 0, 0) }
+to{ -webkit-transform:translate3d(100%, 0, 0) }
+}
+@keyframes pageFromCenterToRight{
+from{ transform:translate3d(0, 0, 0) }
+to{ transform:translate3d(100%, 0, 0) }
+}
+
+@-webkit-keyframes pageFromCenterToLeft{
+from{ opacity:1; -webkit-transform:translate3d(0, 0, 0) }
+to{ opacity:.9; -webkit-transform:translate3d(-20%, 0, 0) }
+}
+@keyframes pageFromCenterToLeft{
+from{ transform:translate3d(0, 0, 0) }
+to{ opacity:.9; transform:translate3d(-20%, 0, 0) }
+}
+
+@-webkit-keyframes pageFromLeftToCenter{
+from{ opacity:.9; -webkit-transform:translate3d(-20%, 0, 0) }
+to{ opacity:1; -webkit-transform:translate3d(0, 0, 0) }
+}
+@keyframes pageFromLeftToCenter{
+from{ transform:translate3d(-20%, 0, 0) }
+to{ opacity:1; transform:translate3d(0, 0, 0) }
+}
+
+@-webkit-keyframes LeftToCenter{
+from{  -webkit-transform:translate3d(-100%, 0, 0) }
+to{  -webkit-transform:translate3d(0, 0, 0) }
+}
+
+@keyframes LeftToCenter{
+from{ transform:translate3d(-100%, 0, 0) }
+to{ transform:translate3d(0, 0, 0) }
+}
+
+@-webkit-keyframes CenterToLeft{
+from{  -webkit-transform:translate3d(0, 0, 0) }
+to{  -webkit-transform:translate3d(-100%, 0, 0) }
+}
+@keyframes CenterToLeft{
+from{ transform:translate3d(0, 0, 0) }
+to{ transform:translate3d(-100%, 0, 0) }
+}
+
+
+@-webkit-keyframes RightToCenter{
+ from{  -webkit-transform:translate3d(100%, 0, 0) }
+ to{  -webkit-transform:translate3d(0, 0, 0) }
+}
+@keyframes RightToCenter{
+ from{ transform:translate3d(100%, 0, 0) }
+ to{ transform:translate3d(0, 0, 0) }
+}
+
+@-webkit-keyframes CenterToRight{
+ from{  -webkit-transform:translate3d(0, 0, 0) }
+ to{  -webkit-transform:translate3d(100%, 0, 0) }
+}
+@keyframes CenterToRight{
+ from{ transform:translate3d(0, 0, 0) }
+ to{ transform:translate3d(100%, 0, 0) }
+}
+
+/*设置图标*/
+@keyframes ico-setting{
+from{ transform: rotate(0deg); }
+to{ transform: rotate( 15deg); }
+}
+@-webkit-keyframes ico-setting{
+ from{ transform: rotate(0deg); }
+ to{ transform: rotate( 15deg); }
+ }
+
+/*图片浏览器*/
+@-webkit-keyframes photoBrowserIn{
+ 0%{ -webkit-transform:translate3d(0, 0, 0) scale(.5); opacity:0 }
+ 100%{ -webkit-transform:translate3d(0, 0, 0) scale(1); opacity:1 }
+}
+@keyframes photoBrowserIn{
+ 0%{ transform:translate3d(0, 0, 0) scale(.5); opacity:0 }
+ 100%{ transform:translate3d(0, 0, 0) scale(1); opacity:1 }
+}
+@-webkit-keyframes photoBrowserOut{
+ 0%{ -webkit-transform:translate3d(0, 0, 0) scale(1); opacity:1 }
+ 100%{ -webkit-transform:translate3d(0, 0, 0) scale(.5); opacity:0 }
+}
+@keyframes photoBrowserOut{
+ 0%{ transform:translate3d(0, 0, 0) scale(1); opacity:1 }
+ 100%{ transform:translate3d(0, 0, 0) scale(.5); opacity:0 }
+}
+
+/*礼物列表*/
+@keyframes bottomToTop{
+ from{ transform:translate3d(0, 100%, 0) }
+ to{ transform:translate3d(0, 0, 0) }
+}
+
+@-webkit-keyframes bottomToTop{
+ from{ transform:translate3d(0, 100%, 0) }
+ to{ transform:translate3d(0, 0, 0) }
+}
+
+@keyframes topToBottom{
+  from{ transform:translate3d(0, 0, 0) }
+  to{ transform:translate3d(0, 100%, 0) }
+ }
+
+@-webkit-keyframes topToBottom{
+ from{ transform:translate3d(0, 0, 0) }
+ to{ transform:translate3d(0, 100%, 0) }
+}
+
+/*礼物列表选择动画效果*/
+@keyframes touchDown{
+ from{
+  transform: scale(1);
+ }
+ to{
+  transform: scale(0.9);
+ }
+}
+@keyframes touchUp{
+ from{
+  transform: scale(0.9);
+ }
+ to{
+  transform: scale(1);
+ }
+}
+
+/*土豪榜动画*/
+@keyframes rank{
+ from{
+   transform: scale(0);
+ }
+ to{
+   transform: scale(1);
+ }
+}
+
+/*拼桌入口按钮动画*/
+@-webkit-keyframes ping-animate{
+ 0%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 6%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 10%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+ 16%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+ }
+ 100%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+}
+
+@keyframes ping-animate{
+ 0%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 6%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 10%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+ 16%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+ }
+ 100%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+}
+
+@-webkit-keyframes flip{
+ 0%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 40%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 50%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+ 80%{
+  -webkit-transform:perspective(800px) scale3d(.95, .95, .95);
+  transform:perspective(800px) scale3d(.95, .95, .95);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+ }
+ 100%{
+  -webkit-transform:perspective(800px);
+  transform:perspective(800px);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }}
+@keyframes flip{
+ 0%{
+  -webkit-transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  transform:perspective(800px) rotate3d(0, 1, 0, -360deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 40%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+  -webkit-animation-timing-function:ease-out;
+  animation-timing-function:ease-out;
+ }
+ 50%{
+  -webkit-transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  transform:perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }
+ 80%{
+  -webkit-transform:perspective(800px) scale3d(.95, .95, .95);
+  transform:perspective(800px) scale3d(.95, .95, .95);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+ }
+ 100%{
+  -webkit-transform:perspective(800px);
+  transform:perspective(800px);
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in
+ }}
