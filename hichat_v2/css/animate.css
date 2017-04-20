@@ -255,7 +255,7 @@ to{ transform: rotate( 15deg); }
   -webkit-transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
   transform:perspective(800px) rotate3d(0, 1, 0, 0deg);
   -webkit-animation-timing-function:ease-in;
-  animation-timing-function:ease-in
+  animation-timing-function:ease-in;
  }
 }
 
